@@ -1,0 +1,58 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="footer-logo" (click)="scrollToTop()">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">{{ info.name.split(' ').pop() }}</span>
+          <span class="logo-bracket"> /&gt;</span>
+        </a>
+        <p class="footer-desc">
+          Frontend Developer Intern đam mê tạo ra những trải nghiệm web tuyệt vời.
+        </p>
+        <div class="footer-socials">
+          <a *ngFor="let social of info.socials"
+             [href]="social.url"
+             target="_blank"
+             class="footer-social"
+             [title]="social.name">
+            <i [class]="social.icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-title">Liên kết nhanh</h4>
+        <a *ngFor="let link of quickLinks"
+           class="footer-link"
+           (click)="scrollTo(link.target)">
+          {{ link.label }}
+        </a>
+      </div>
+
+      <div class="footer-contact">
+        <h4 class="footer-title">Liên hệ</h4>
+        <div class="footer-contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>{{ info.email }}</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <span>{{ info.phone }}</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>{{ info.location }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ currentYear }} {{ info.name }}. Made with <span class="heart">❤️</span> & Angular</p>
+    </div>
+  </div>
+
+  <button class="back-to-top" (click)="scrollToTop()" title="Lên đầu trang">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+</footer>

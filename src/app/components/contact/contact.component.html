@@ -1,0 +1,98 @@
+<section class="contact section" id="contact" [class.visible]="isVisible">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">&lt;Liên hệ /&gt;</span>
+      <h2 class="section-title">Kết nối với tôi</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3 class="contact-subtitle">Hãy nói chuyện nào! 💬</h3>
+        <p class="contact-text">
+          Mình luôn sẵn sàng lắng nghe về các cơ hội mới, dự án thú vị hoặc đơn giản là một cuộc trò chuyện thân thiện.
+        </p>
+
+        <div class="info-cards">
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <span class="info-label">Email</span>
+              <span class="info-value">{{ info.email }}</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div>
+              <span class="info-label">Điện thoại</span>
+              <span class="info-value">{{ info.phone }}</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <span class="info-label">Địa điểm</span>
+              <span class="info-value">{{ info.location }}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-socials">
+          <a *ngFor="let social of info.socials"
+             [href]="social.url"
+             target="_blank"
+             class="social-btn"
+             [title]="social.name">
+            <i [class]="social.icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <form class="contact-form" (ngSubmit)="onSubmit()" *ngIf="!isSubmitted">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Họ tên</label>
+              <input type="text" id="name" [(ngModel)]="formData.name" name="name"
+                     placeholder="Nguyễn Văn A" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" [(ngModel)]="formData.email" name="email"
+                     placeholder="email@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Chủ đề</label>
+            <input type="text" id="subject" [(ngModel)]="formData.subject" name="subject"
+                   placeholder="Hợp tác dự án...">
+          </div>
+          <div class="form-group">
+            <label for="message">Tin nhắn</label>
+            <textarea id="message" [(ngModel)]="formData.message" name="message"
+                      rows="5" placeholder="Nội dung tin nhắn..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-paper-plane"></i> Gửi tin nhắn
+          </button>
+        </form>
+
+        <div class="success-message" *ngIf="isSubmitted">
+          <div class="success-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h3>Gửi thành công! 🎉</h3>
+          <p>Cảm ơn bạn đã liên hệ. Mình sẽ phản hồi sớm nhất có thể!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

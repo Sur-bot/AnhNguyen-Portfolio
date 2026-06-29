@@ -1,0 +1,62 @@
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="floating-shape shape-1"></div>
+    <div class="floating-shape shape-2"></div>
+    <div class="floating-shape shape-3"></div>
+    <div class="floating-shape shape-4"></div>
+    <div class="floating-shape shape-5"></div>
+    <div class="grid-bg"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="hero-greeting">👋 Xin chào, mình là</p>
+      <h1 class="hero-name">{{ info.name }}</h1>
+      <div class="hero-title-wrapper">
+        <span class="hero-title-prefix">Mình là </span>
+        <span class="hero-title typed">{{ displayedText }}<span class="cursor">|</span></span>
+      </div>
+      <p class="hero-description">{{ info.description }}</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" (click)="scrollTo('contact')">
+          <i class="fas fa-paper-plane"></i> Liên hệ
+        </a>
+        <a class="btn btn-outline" (click)="scrollTo('projects')">
+          <i class="fas fa-folder-open"></i> Xem dự án
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a *ngFor="let social of info.socials"
+           [href]="social.url"
+           target="_blank"
+           class="social-icon"
+           [title]="social.name">
+          <i [class]="social.icon"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="avatar-wrapper">
+        <div class="avatar-glow"></div>
+        <div class="avatar-ring">
+          <div class="avatar-placeholder">
+            <i class="fas fa-user-astronaut"></i>
+          </div>
+        </div>
+        <div class="orbit-ring">
+          <div class="orbit-dot dot-1"></div>
+          <div class="orbit-dot dot-2"></div>
+          <div class="orbit-dot dot-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator" (click)="scrollTo('about')">
+    <div class="mouse">
+      <div class="mouse-wheel"></div>
+    </div>
+    <span>Scroll xuống</span>
+  </div>
+</section>

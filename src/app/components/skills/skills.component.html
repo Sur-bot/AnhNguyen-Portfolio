@@ -1,0 +1,39 @@
+<section class="skills section" id="skills" [class.visible]="isVisible">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">&lt;Kỹ năng /&gt;</span>
+      <h2 class="section-title">Công nghệ & Kỹ năng</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="skills-filters">
+      <button *ngFor="let filter of filters"
+              class="filter-btn"
+              [class.active]="activeFilter === filter.value"
+              (click)="filterSkills(filter.value)">
+        {{ filter.label }}
+      </button>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card" *ngFor="let skill of filteredSkills; let i = index"
+           [style.animation-delay]="(i * 0.08) + 's'">
+        <div class="skill-icon">
+          <i [class]="skill.icon"></i>
+        </div>
+        <div class="skill-info">
+          <div class="skill-header">
+            <span class="skill-name">{{ skill.name }}</span>
+            <span class="skill-percent">{{ skill.level }}%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress"
+                 [style.width]="isVisible ? skill.level + '%' : '0%'"
+                 [style.transition-delay]="(i * 0.1) + 's'">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

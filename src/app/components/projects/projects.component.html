@@ -1,0 +1,44 @@
+<section class="projects section" id="projects" [class.visible]="isVisible">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">&lt;Dự án /&gt;</span>
+      <h2 class="section-title">Dự án nổi bật</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="projects-filters">
+      <button *ngFor="let filter of filters"
+              class="filter-btn"
+              [class.active]="activeFilter === filter.value"
+              (click)="filterProjects(filter.value)">
+        {{ filter.label }}
+      </button>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of filteredProjects; let i = index"
+           [style.animation-delay]="(i * 0.1) + 's'">
+        <div class="project-image">
+          <div class="project-placeholder">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <div class="project-overlay">
+            <a [href]="project.demoUrl" class="project-link" target="_blank" title="Live Demo">
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a [href]="project.githubUrl" class="project-link" target="_blank" title="Source Code">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">{{ project.title }}</h3>
+          <p class="project-description">{{ project.description }}</p>
+          <div class="project-tags">
+            <span class="tag" *ngFor="let tech of project.technologies">{{ tech }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
