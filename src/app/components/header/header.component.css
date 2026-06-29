@@ -159,8 +159,42 @@
   background: rgba(108, 99, 255, 0.08);
 }
 
+/* Language Switcher */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  background: rgba(108, 99, 255, 0.1);
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.lang-switch:hover {
+  background: rgba(108, 99, 255, 0.2);
+  color: var(--primary);
+}
+
+.mobile-actions {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mobile-only {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .nav-desktop { display: none; }
+  .mobile-actions { display: flex; }
+  .mobile-only { display: flex; margin-left: 0; }
   .hamburger { display: flex; }
   .nav-mobile { display: flex; }
 }
+

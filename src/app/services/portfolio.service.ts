@@ -8,11 +8,11 @@ export class PortfolioService {
 
   getPersonalInfo(): PersonalInfo {
     return {
-      name: 'Nguyễn Văn An',
-      title: 'Frontend Developer Intern',
-      description: 'Xin chào! Mình là An, một sinh viên năm cuối đam mê phát triển web. Mình yêu thích việc tạo ra những giao diện web đẹp mắt, mượt mà và thân thiện với người dùng. Với kiến thức về Angular, React và các công nghệ web hiện đại, mình luôn tìm tòi và học hỏi để nâng cao kỹ năng mỗi ngày.',
+      name: 'Nguyễn Văn Anh',
+      title: 'Frontend Developer',
+      description: 'Xin chào! Mình là Anh, một sinh viên năm cuối đam mê phát triển web. Mình yêu thích việc tạo ra những giao diện web đẹp mắt, mượt mà và thân thiện với người dùng. Với kiến thức về Angular, React và các công nghệ web hiện đại, mình luôn tìm tòi và học hỏi để nâng cao kỹ năng mỗi ngày.',
       avatar: '',
-      email: 'nguyenvanan.dev@gmail.com',
+      email: 'www.vanhsp2002@gmail.com',
       phone: '+84 912 345 678',
       location: 'TP. Hồ Chí Minh, Việt Nam',
       socials: [

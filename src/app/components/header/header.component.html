@@ -10,22 +10,33 @@
       <a *ngFor="let link of navLinks"
          class="nav-link"
          (click)="scrollTo(link.target)">
-        {{ link.label }}
+        {{ link.label | translate }}
       </a>
+      
+      <div class="lang-switch" (click)="switchLanguage()">
+        <i class="fas fa-globe"></i>
+        <span class="lang-text">{{ currentLang | uppercase }}</span>
+      </div>
     </nav>
 
-    <button class="hamburger" [class.active]="isMobileMenuOpen" (click)="toggleMobileMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+    <div class="mobile-actions">
+      <div class="lang-switch mobile-only" (click)="switchLanguage()">
+        <i class="fas fa-globe"></i>
+        <span class="lang-text">{{ currentLang | uppercase }}</span>
+      </div>
+      <button class="hamburger" [class.active]="isMobileMenuOpen" (click)="toggleMobileMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 
   <nav class="nav-mobile" [class.open]="isMobileMenuOpen">
     <a *ngFor="let link of navLinks"
        class="nav-link-mobile"
        (click)="scrollTo(link.target)">
-      {{ link.label }}
+      {{ link.label | translate }}
     </a>
   </nav>
 </header>
