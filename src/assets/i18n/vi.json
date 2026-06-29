@@ -6,5 +6,142 @@
     "PROJECTS": "Dự án",
     "EXPERIENCE": "Kinh nghiệm",
     "CONTACT": "Liên hệ"
+  },
+  "HERO": {
+    "GREETING": "👋 Xin chào, mình là",
+    "TITLE_PREFIX": "Mình là ",
+    "CTA_CONTACT": "Liên hệ",
+    "CTA_PROJECTS": "Xem dự án",
+    "SCROLL_DOWN": "Scroll xuống",
+    "TYPING": {
+      "0": "Frontend Developer",
+      "1": "Angular Enthusiast",
+      "2": "UI/UX Lover",
+      "3": "Problem Solver"
+    }
+  },
+  "ABOUT": {
+    "TAG": "<Giới thiệu />",
+    "TITLE": "Về bản thân",
+    "SUBTITLE": "Frontend Developer tại TP.HCM",
+    "DESCRIPTION": "Xin chào! Mình là Anh, một sinh viên năm cuối đam mê phát triển web. Mình yêu thích việc tạo ra những giao diện web đẹp mắt, mượt mà và thân thiện với người dùng. Với kiến thức về Angular, React và các công nghệ web hiện đại, mình luôn tìm tòi và học hỏi để nâng cao kỹ năng mỗi ngày.",
+    "BADGE_NUMBER": "1+",
+    "BADGE_TEXT": "Năm\nKinh nghiệm",
+    "UNIVERSITY": "ĐH Bách Khoa TP.HCM",
+    "AVAILABLE": "Sẵn sàng nhận việc",
+    "STATS": {
+      "PROJECTS": "Dự án",
+      "EXPERIENCE": "Năm KN",
+      "SKILLS": "Kỹ năng",
+      "CERTIFICATES": "Chứng chỉ"
+    }
+  },
+  "SKILLS": {
+    "TAG": "<Kỹ năng />",
+    "TITLE": "Công nghệ & Kỹ năng",
+    "FILTER_ALL": "Tất cả",
+    "FILTER_FRONTEND": "Frontend",
+    "FILTER_BACKEND": "Backend",
+    "FILTER_TOOLS": "Tools"
+  },
+  "PROJECTS": {
+    "TAG": "<Dự án />",
+    "TITLE": "Dự án nổi bật",
+    "FILTER_ALL": "Tất cả",
+    "FILTER_WEB": "Web App",
+    "FILTER_FULLSTACK": "Full Stack",
+    "ITEMS": {
+      "0": {
+        "TITLE": "E-Commerce Dashboard",
+        "DESCRIPTION": "Dashboard quản lý bán hàng với biểu đồ thống kê, quản lý đơn hàng và sản phẩm. Sử dụng Angular Material và Chart.js."
+      },
+      "1": {
+        "TITLE": "Weather App",
+        "DESCRIPTION": "Ứng dụng thời tiết với giao diện đẹp mắt, hiển thị dự báo 7 ngày, sử dụng OpenWeatherMap API."
+      },
+      "2": {
+        "TITLE": "Task Management App",
+        "DESCRIPTION": "Ứng dụng quản lý công việc theo phương pháp Kanban, hỗ trợ drag & drop, tags và filter."
+      },
+      "3": {
+        "TITLE": "Portfolio Website",
+        "DESCRIPTION": "Trang portfolio cá nhân responsive với thiết kế hiện đại, dark theme và animations mượt mà."
+      },
+      "4": {
+        "TITLE": "Chat Real-time",
+        "DESCRIPTION": "Ứng dụng chat real-time với Socket.io, hỗ trợ nhóm chat, gửi hình ảnh và emoji."
+      },
+      "5": {
+        "TITLE": "Blog CMS",
+        "DESCRIPTION": "Hệ thống quản lý blog với editor WYSIWYG, quản lý bài viết, categories và tags."
+      }
+    }
+  },
+  "EXPERIENCE": {
+    "TAG": "<Kinh nghiệm />",
+    "TITLE": "Hành trình của tôi",
+    "ITEMS": {
+      "0": {
+        "COMPANY": "FPT Software",
+        "POSITION": "Frontend Developer Intern",
+        "DURATION": "Tháng 6/2025 - Hiện tại",
+        "DESC": {
+          "0": "Phát triển giao diện web sử dụng Angular 16 và TypeScript",
+          "1": "Tham gia code review và áp dụng best practices",
+          "2": "Làm việc với RESTful APIs và RxJS",
+          "3": "Sử dụng Git cho version control trong team 8 người"
+        }
+      },
+      "1": {
+        "COMPANY": "Freelance Projects",
+        "POSITION": "Web Developer",
+        "DURATION": "Tháng 1/2025 - Tháng 5/2025",
+        "DESC": {
+          "0": "Thiết kế và phát triển 3 website cho khách hàng cá nhân",
+          "1": "Tối ưu hiệu suất và SEO cho các trang web",
+          "2": "Responsive design cho mọi thiết bị"
+        }
+      },
+      "2": {
+        "COMPANY": "Đại học Bách Khoa TP.HCM",
+        "POSITION": "Sinh viên CNTT",
+        "DURATION": "Tháng 9/2021 - Tháng 6/2025",
+        "DESC": {
+          "0": "Chuyên ngành Khoa học Máy tính",
+          "1": "GPA: 3.2/4.0",
+          "2": "Thành viên CLB Lập trình",
+          "3": "Đồ án tốt nghiệp: Hệ thống quản lý e-learning"
+        }
+      }
+    }
+  },
+  "CONTACT": {
+    "TAG": "<Liên hệ />",
+    "TITLE": "Kết nối với tôi",
+    "SUBTITLE": "Hãy nói chuyện nào! 💬",
+    "TEXT": "Mình luôn sẵn sàng lắng nghe về các cơ hội mới, dự án thú vị hoặc đơn giản là một cuộc trò chuyện thân thiện.",
+    "LABEL_EMAIL": "Email",
+    "LABEL_PHONE": "Điện thoại",
+    "LABEL_LOCATION": "Địa điểm",
+    "FORM": {
+      "NAME": "Họ tên",
+      "NAME_PLACEHOLDER": "Nguyễn Văn A",
+      "EMAIL": "Email",
+      "EMAIL_PLACEHOLDER": "email@example.com",
+      "SUBJECT": "Chủ đề",
+      "SUBJECT_PLACEHOLDER": "Hợp tác dự án...",
+      "MESSAGE": "Tin nhắn",
+      "MESSAGE_PLACEHOLDER": "Nội dung tin nhắn...",
+      "SUBMIT": "Gửi tin nhắn"
+    },
+    "SUCCESS_TITLE": "Gửi thành công! 🎉",
+    "SUCCESS_TEXT": "Cảm ơn bạn đã liên hệ. Mình sẽ phản hồi sớm nhất có thể!"
+  },
+  "FOOTER": {
+    "DESC": "Frontend Developer Intern đam mê tạo ra những trải nghiệm web tuyệt vời.",
+    "QUICK_LINKS": "Liên kết nhanh",
+    "CONTACT_TITLE": "Liên hệ",
+    "BACK_TO_TOP": "Lên đầu trang",
+    "COPYRIGHT": "Made with ❤️ & Angular"
   }
 }

@@ -1,8 +1,8 @@
 <section class="projects section" id="projects" [class.visible]="isVisible">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">&lt;Dự án /&gt;</span>
-      <h2 class="section-title">Dự án nổi bật</h2>
+      <span class="section-tag">{{ 'PROJECTS.TAG' | translate }}</span>
+      <h2 class="section-title">{{ 'PROJECTS.TITLE' | translate }}</h2>
       <div class="section-line"></div>
     </div>
 
@@ -11,7 +11,7 @@
               class="filter-btn"
               [class.active]="activeFilter === filter.value"
               (click)="filterProjects(filter.value)">
-        {{ filter.label }}
+        {{ filter.labelKey | translate }}
       </button>
     </div>
 
@@ -32,8 +32,8 @@
           </div>
         </div>
         <div class="project-content">
-          <h3 class="project-title">{{ project.title }}</h3>
-          <p class="project-description">{{ project.description }}</p>
+          <h3 class="project-title">{{ project.titleKey | translate }}</h3>
+          <p class="project-description">{{ project.descKey | translate }}</p>
           <div class="project-tags">
             <span class="tag" *ngFor="let tech of project.technologies">{{ tech }}</span>
           </div>

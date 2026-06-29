@@ -1,6 +1,14 @@
 import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 import { PortfolioService } from '../../services/portfolio.service';
-import { Experience } from '../../models/portfolio.model';
+
+interface TranslatedExperience {
+  id: number;
+  companyKey: string;
+  positionKey: string;
+  durationKey: string;
+  descKeys: string[];
+  icon: string;
+}
 
 @Component({
   selector: 'app-experience',
@@ -8,7 +16,7 @@ import { Experience } from '../../models/portfolio.model';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
-  experiences: Experience[] = [];
+  experiences: TranslatedExperience[] = [];
   isVisible = false;
   private animated = false;
 
@@ -18,7 +26,15 @@ export class ExperienceComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.experiences = this.portfolioService.getExperiences();
+    const rawExperiences = this.portfolioService.getExperiences();
+    this.experiences = rawExperiences.map((exp, i) => ({
+      id: exp.id,
+      companyKey: `EXPERIENCE.ITEMS.${i}.COMPANY`,
+      positionKey: `EXPERIENCE.ITEMS.${i}.POSITION`,
+      durationKey: `EXPERIENCE.ITEMS.${i}.DURATION`,
+      descKeys: exp.description.map((_, j) => `EXPERIENCE.ITEMS.${i}.DESC.${j}`),
+      icon: exp.icon
+    }));
   }
 
   @HostListener('window:scroll')

@@ -1,6 +1,16 @@
 import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 import { PortfolioService } from '../../services/portfolio.service';
-import { Project } from '../../models/portfolio.model';
+
+interface TranslatedProject {
+  id: number;
+  titleKey: string;
+  descKey: string;
+  image: string;
+  technologies: string[];
+  category: string;
+  demoUrl: string;
+  githubUrl: string;
+}
 
 @Component({
   selector: 'app-projects',
@@ -8,16 +18,16 @@ import { Project } from '../../models/portfolio.model';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  projects: Project[] = [];
-  filteredProjects: Project[] = [];
+  projects: TranslatedProject[] = [];
+  filteredProjects: TranslatedProject[] = [];
   activeFilter = 'all';
   isVisible = false;
   private animated = false;
 
   filters = [
-    { label: 'Tất cả', value: 'all' },
-    { label: 'Web App', value: 'web' },
-    { label: 'Full Stack', value: 'fullstack' }
+    { labelKey: 'PROJECTS.FILTER_ALL', value: 'all' },
+    { labelKey: 'PROJECTS.FILTER_WEB', value: 'web' },
+    { labelKey: 'PROJECTS.FILTER_FULLSTACK', value: 'fullstack' }
   ];
 
   constructor(
@@ -26,7 +36,17 @@ export class ProjectsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.projects = this.portfolioService.getProjects();
+    const rawProjects = this.portfolioService.getProjects();
+    this.projects = rawProjects.map((p, i) => ({
+      id: p.id,
+      titleKey: `PROJECTS.ITEMS.${i}.TITLE`,
+      descKey: `PROJECTS.ITEMS.${i}.DESCRIPTION`,
+      image: p.image,
+      technologies: p.technologies,
+      category: p.category,
+      demoUrl: p.demoUrl,
+      githubUrl: p.githubUrl
+    }));
     this.filteredProjects = this.projects;
   }
 

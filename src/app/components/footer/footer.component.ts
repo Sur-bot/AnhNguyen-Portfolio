@@ -12,12 +12,12 @@ export class FooterComponent {
   currentYear = new Date().getFullYear();
 
   quickLinks = [
-    { label: 'Trang chủ', target: 'hero' },
-    { label: 'Giới thiệu', target: 'about' },
-    { label: 'Kỹ năng', target: 'skills' },
-    { label: 'Dự án', target: 'projects' },
-    { label: 'Kinh nghiệm', target: 'experience' },
-    { label: 'Liên hệ', target: 'contact' }
+    { labelKey: 'NAV.HOME', target: 'hero' },
+    { labelKey: 'NAV.ABOUT', target: 'about' },
+    { labelKey: 'NAV.SKILLS', target: 'skills' },
+    { labelKey: 'NAV.PROJECTS', target: 'projects' },
+    { labelKey: 'NAV.EXPERIENCE', target: 'experience' },
+    { labelKey: 'NAV.CONTACT', target: 'contact' }
   ];
 
   constructor(private portfolioService: PortfolioService) {

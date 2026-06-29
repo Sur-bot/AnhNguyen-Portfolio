@@ -1,8 +1,8 @@
 <section class="skills section" id="skills" [class.visible]="isVisible">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">&lt;Kỹ năng /&gt;</span>
-      <h2 class="section-title">Công nghệ & Kỹ năng</h2>
+      <span class="section-tag">{{ 'SKILLS.TAG' | translate }}</span>
+      <h2 class="section-title">{{ 'SKILLS.TITLE' | translate }}</h2>
       <div class="section-line"></div>
     </div>
 
@@ -11,7 +11,7 @@
               class="filter-btn"
               [class.active]="activeFilter === filter.value"
               (click)="filterSkills(filter.value)">
-        {{ filter.label }}
+        {{ filter.labelKey | translate }}
       </button>
     </div>
 

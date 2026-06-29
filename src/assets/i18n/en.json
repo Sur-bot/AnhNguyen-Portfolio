@@ -6,5 +6,142 @@
     "PROJECTS": "Projects",
     "EXPERIENCE": "Experience",
     "CONTACT": "Contact"
+  },
+  "HERO": {
+    "GREETING": "👋 Hi there, I'm",
+    "TITLE_PREFIX": "I'm a ",
+    "CTA_CONTACT": "Contact Me",
+    "CTA_PROJECTS": "View Projects",
+    "SCROLL_DOWN": "Scroll down",
+    "TYPING": {
+      "0": "Frontend Developer",
+      "1": "Angular Enthusiast",
+      "2": "UI/UX Lover",
+      "3": "Problem Solver"
+    }
+  },
+  "ABOUT": {
+    "TAG": "<About />",
+    "TITLE": "About Me",
+    "SUBTITLE": "Frontend Developer in Ho Chi Minh City",
+    "DESCRIPTION": "Hello! I'm Anh, a final-year student passionate about web development. I love creating beautiful, smooth, and user-friendly web interfaces. With knowledge in Angular, React, and modern web technologies, I'm always eager to learn and improve my skills every day.",
+    "BADGE_NUMBER": "1+",
+    "BADGE_TEXT": "Years\nExperience",
+    "UNIVERSITY": "HCMUT (Bach Khoa University)",
+    "AVAILABLE": "Open to work",
+    "STATS": {
+      "PROJECTS": "Projects",
+      "EXPERIENCE": "Years Exp",
+      "SKILLS": "Skills",
+      "CERTIFICATES": "Certificates"
+    }
+  },
+  "SKILLS": {
+    "TAG": "<Skills />",
+    "TITLE": "Technologies & Skills",
+    "FILTER_ALL": "All",
+    "FILTER_FRONTEND": "Frontend",
+    "FILTER_BACKEND": "Backend",
+    "FILTER_TOOLS": "Tools"
+  },
+  "PROJECTS": {
+    "TAG": "<Projects />",
+    "TITLE": "Featured Projects",
+    "FILTER_ALL": "All",
+    "FILTER_WEB": "Web App",
+    "FILTER_FULLSTACK": "Full Stack",
+    "ITEMS": {
+      "0": {
+        "TITLE": "E-Commerce Dashboard",
+        "DESCRIPTION": "Sales management dashboard with statistical charts, order and product management. Built with Angular Material and Chart.js."
+      },
+      "1": {
+        "TITLE": "Weather App",
+        "DESCRIPTION": "Beautiful weather application displaying 7-day forecasts, powered by OpenWeatherMap API."
+      },
+      "2": {
+        "TITLE": "Task Management App",
+        "DESCRIPTION": "Kanban-style task management app with drag & drop support, tags, and filtering capabilities."
+      },
+      "3": {
+        "TITLE": "Portfolio Website",
+        "DESCRIPTION": "Personal responsive portfolio with modern design, dark theme, and smooth animations."
+      },
+      "4": {
+        "TITLE": "Real-time Chat",
+        "DESCRIPTION": "Real-time chat application with Socket.io, supporting group chats, image sharing, and emojis."
+      },
+      "5": {
+        "TITLE": "Blog CMS",
+        "DESCRIPTION": "Blog management system with WYSIWYG editor, post management, categories, and tags."
+      }
+    }
+  },
+  "EXPERIENCE": {
+    "TAG": "<Experience />",
+    "TITLE": "My Journey",
+    "ITEMS": {
+      "0": {
+        "COMPANY": "FPT Software",
+        "POSITION": "Frontend Developer Intern",
+        "DURATION": "Jun 2025 - Present",
+        "DESC": {
+          "0": "Developing web interfaces using Angular 16 and TypeScript",
+          "1": "Participating in code reviews and applying best practices",
+          "2": "Working with RESTful APIs and RxJS",
+          "3": "Using Git for version control in a team of 8"
+        }
+      },
+      "1": {
+        "COMPANY": "Freelance Projects",
+        "POSITION": "Web Developer",
+        "DURATION": "Jan 2025 - May 2025",
+        "DESC": {
+          "0": "Designed and developed 3 websites for individual clients",
+          "1": "Optimized performance and SEO for websites",
+          "2": "Responsive design for all devices"
+        }
+      },
+      "2": {
+        "COMPANY": "Ho Chi Minh City University of Technology",
+        "POSITION": "IT Student",
+        "DURATION": "Sep 2021 - Jun 2025",
+        "DESC": {
+          "0": "Major in Computer Science",
+          "1": "GPA: 3.2/4.0",
+          "2": "Member of Programming Club",
+          "3": "Thesis: E-learning Management System"
+        }
+      }
+    }
+  },
+  "CONTACT": {
+    "TAG": "<Contact />",
+    "TITLE": "Get In Touch",
+    "SUBTITLE": "Let's talk! 💬",
+    "TEXT": "I'm always open to hearing about new opportunities, exciting projects, or simply having a friendly conversation.",
+    "LABEL_EMAIL": "Email",
+    "LABEL_PHONE": "Phone",
+    "LABEL_LOCATION": "Location",
+    "FORM": {
+      "NAME": "Full Name",
+      "NAME_PLACEHOLDER": "John Doe",
+      "EMAIL": "Email",
+      "EMAIL_PLACEHOLDER": "email@example.com",
+      "SUBJECT": "Subject",
+      "SUBJECT_PLACEHOLDER": "Project collaboration...",
+      "MESSAGE": "Message",
+      "MESSAGE_PLACEHOLDER": "Your message...",
+      "SUBMIT": "Send Message"
+    },
+    "SUCCESS_TITLE": "Sent successfully! 🎉",
+    "SUCCESS_TEXT": "Thank you for reaching out. I'll get back to you as soon as possible!"
+  },
+  "FOOTER": {
+    "DESC": "Frontend Developer Intern passionate about creating amazing web experiences.",
+    "QUICK_LINKS": "Quick Links",
+    "CONTACT_TITLE": "Contact",
+    "BACK_TO_TOP": "Back to top",
+    "COPYRIGHT": "Made with ❤️ & Angular"
   }
 }

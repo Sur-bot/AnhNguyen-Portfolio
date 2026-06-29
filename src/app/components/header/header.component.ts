@@ -12,7 +12,7 @@ export class HeaderComponent {
   info: PersonalInfo;
   isScrolled = false;
   isMobileMenuOpen = false;
-  currentLang = 'vi';
+  currentLang = 'en';
 
   navLinks = [
     { label: 'NAV.HOME', target: 'hero' },

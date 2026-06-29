@@ -1,8 +1,8 @@
 <section class="experience section" id="experience" [class.visible]="isVisible">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">&lt;Kinh nghiệm /&gt;</span>
-      <h2 class="section-title">Hành trình của tôi</h2>
+      <span class="section-tag">{{ 'EXPERIENCE.TAG' | translate }}</span>
+      <h2 class="section-title">{{ 'EXPERIENCE.TITLE' | translate }}</h2>
       <div class="section-line"></div>
     </div>
 
@@ -18,15 +18,15 @@
         </div>
         <div class="timeline-card">
           <div class="card-header">
-            <h3 class="card-position">{{ exp.position }}</h3>
-            <span class="card-duration">{{ exp.duration }}</span>
+            <h3 class="card-position">{{ exp.positionKey | translate }}</h3>
+            <span class="card-duration">{{ exp.durationKey | translate }}</span>
           </div>
           <h4 class="card-company">
             <i [class]="exp.icon" style="margin-right: 0.4rem;"></i>
-            {{ exp.company }}
+            {{ exp.companyKey | translate }}
           </h4>
           <ul class="card-list">
-            <li *ngFor="let desc of exp.description">{{ desc }}</li>
+            <li *ngFor="let descKey of exp.descKeys">{{ descKey | translate }}</li>
           </ul>
         </div>
       </div>

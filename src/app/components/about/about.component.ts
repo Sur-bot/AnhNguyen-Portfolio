@@ -12,10 +12,10 @@ export class AboutComponent implements OnInit {
   isVisible = false;
 
   stats = [
-    { value: 0, target: 6, label: 'Dự án', suffix: '+' },
-    { value: 0, target: 1, label: 'Năm KN', suffix: '+' },
-    { value: 0, target: 14, label: 'Kỹ năng', suffix: '' },
-    { value: 0, target: 3, label: 'Chứng chỉ', suffix: '' }
+    { value: 0, target: 6, labelKey: 'ABOUT.STATS.PROJECTS', suffix: '+' },
+    { value: 0, target: 1, labelKey: 'ABOUT.STATS.EXPERIENCE', suffix: '+' },
+    { value: 0, target: 14, labelKey: 'ABOUT.STATS.SKILLS', suffix: '' },
+    { value: 0, target: 3, labelKey: 'ABOUT.STATS.CERTIFICATES', suffix: '' }
   ];
 
   private animated = false;

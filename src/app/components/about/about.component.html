@@ -1,8 +1,8 @@
 <section class="about section" id="about" [class.visible]="isVisible">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">&lt;Giới thiệu /&gt;</span>
-      <h2 class="section-title">Về bản thân</h2>
+      <span class="section-tag">{{ 'ABOUT.TAG' | translate }}</span>
+      <h2 class="section-title">{{ 'ABOUT.TITLE' | translate }}</h2>
       <div class="section-line"></div>
     </div>
 
@@ -15,14 +15,14 @@
           <div class="frame-border"></div>
         </div>
         <div class="experience-badge">
-          <span class="badge-number">1+</span>
-          <span class="badge-text">Năm<br>Kinh nghiệm</span>
+          <span class="badge-number">{{ 'ABOUT.BADGE_NUMBER' | translate }}</span>
+          <span class="badge-text" [innerHTML]="'ABOUT.BADGE_TEXT' | translate"></span>
         </div>
       </div>
 
       <div class="about-content">
-        <h3 class="about-subtitle">Frontend Developer tại TP.HCM</h3>
-        <p class="about-text">{{ info.description }}</p>
+        <h3 class="about-subtitle">{{ 'ABOUT.SUBTITLE' | translate }}</h3>
+        <p class="about-text">{{ 'ABOUT.DESCRIPTION' | translate }}</p>
 
         <div class="about-details">
           <div class="detail-item">
@@ -35,18 +35,18 @@
           </div>
           <div class="detail-item">
             <i class="fas fa-graduation-cap"></i>
-            <span>ĐH Bách Khoa TP.HCM</span>
+            <span>{{ 'ABOUT.UNIVERSITY' | translate }}</span>
           </div>
           <div class="detail-item">
             <i class="fas fa-circle" style="color: #22c55e; font-size: 0.5rem;"></i>
-            <span>Sẵn sàng nhận việc</span>
+            <span>{{ 'ABOUT.AVAILABLE' | translate }}</span>
           </div>
         </div>
 
         <div class="about-stats">
           <div class="stat-item" *ngFor="let stat of stats">
             <span class="stat-value">{{ stat.value }}{{ stat.suffix }}</span>
-            <span class="stat-label">{{ stat.label }}</span>
+            <span class="stat-label">{{ stat.labelKey | translate }}</span>
           </div>
         </div>
       </div>

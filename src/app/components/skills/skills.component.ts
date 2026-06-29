@@ -15,10 +15,10 @@ export class SkillsComponent implements OnInit {
   private animated = false;
 
   filters = [
-    { label: 'Tất cả', value: 'all' },
-    { label: 'Frontend', value: 'frontend' },
-    { label: 'Backend', value: 'backend' },
-    { label: 'Tools', value: 'tools' }
+    { labelKey: 'SKILLS.FILTER_ALL', value: 'all' },
+    { labelKey: 'SKILLS.FILTER_FRONTEND', value: 'frontend' },
+    { labelKey: 'SKILLS.FILTER_BACKEND', value: 'backend' },
+    { labelKey: 'SKILLS.FILTER_TOOLS', value: 'tools' }
   ];
 
   constructor(
