@@ -50,7 +50,7 @@
 
 .project-card {
   border-radius: 16px;
-  background: rgba(21, 25, 55, 0.6);
+  background: var(--card-bg);
   border: 1px solid rgba(108, 99, 255, 0.08);
   overflow: hidden;
   transition: all 0.4s ease;
@@ -91,7 +91,7 @@
 .project-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(10, 14, 39, 0.85);
+  background: rgba(72, 74, 81, 0.85);
   display: flex;
   align-items: center;
   justify-content: center;

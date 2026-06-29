@@ -78,7 +78,7 @@
 .timeline-card {
   padding: 1.5rem;
   border-radius: 16px;
-  background: rgba(21, 25, 55, 0.7);
+  background: var(--card-bg);
   border: 1px solid rgba(108, 99, 255, 0.1);
   transition: all 0.3s ease;
 }
