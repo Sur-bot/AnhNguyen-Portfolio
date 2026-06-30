@@ -8,11 +8,11 @@
     "CONTACT": "Liên hệ"
   },
   "HERO": {
-    "GREETING": "👋 Xin chào, mình là",
+    "GREETING": "Xin chào, mình là",
     "TITLE_PREFIX": "Mình là ",
     "CTA_CONTACT": "Liên hệ",
     "CTA_PROJECTS": "Xem dự án",
-    "SCROLL_DOWN": "Scroll xuống",
+    "SCROLL_DOWN": "Trượt xuống",
     "TYPING": {
       "0": "Frontend Developer",
       "1": "Angular Enthusiast",

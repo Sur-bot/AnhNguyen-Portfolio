@@ -8,7 +8,7 @@
     "CONTACT": "Contact"
   },
   "HERO": {
-    "GREETING": "👋 Hi there, I'm",
+    "GREETING": "Hi there, I'm",
     "TITLE_PREFIX": "I'm a ",
     "CTA_CONTACT": "Contact Me",
     "CTA_PROJECTS": "View Projects",
