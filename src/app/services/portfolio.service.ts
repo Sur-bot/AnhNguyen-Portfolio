@@ -30,15 +30,12 @@ export class PortfolioService {
       { name: 'JavaScript', level: 80, icon: 'fab fa-js-square', category: 'frontend' },
       { name: 'TypeScript', level: 75, icon: 'fas fa-code', category: 'frontend' },
       { name: 'Angular', level: 75, icon: 'fab fa-angular', category: 'frontend' },
-      { name: 'React', level: 65, icon: 'fab fa-react', category: 'frontend' },
-      { name: 'Node.js', level: 60, icon: 'fab fa-node-js', category: 'backend' },
-      { name: 'Express.js', level: 55, icon: 'fas fa-server', category: 'backend' },
-      { name: 'MongoDB', level: 50, icon: 'fas fa-database', category: 'backend' },
-      { name: 'MySQL', level: 55, icon: 'fas fa-database', category: 'backend' },
+      { name: 'Node.js', level: 70, icon: 'fab fa-node-js', category: 'backend' },
+      { name: 'Express.js', level: 60, icon: 'fas fa-server', category: 'backend' },
+      { name: 'MySQL', level: 75, icon: 'fas fa-database', category: 'backend' },
       { name: 'Git', level: 80, icon: 'fab fa-git-alt', category: 'tools' },
-      { name: 'Figma', level: 70, icon: 'fab fa-figma', category: 'tools' },
+      { name: 'Figma', level: 40, icon: 'fab fa-figma', category: 'tools' },
       { name: 'VS Code', level: 90, icon: 'fas fa-laptop-code', category: 'tools' },
-      { name: 'Docker', level: 40, icon: 'fab fa-docker', category: 'tools' },
     ];
   }
 
