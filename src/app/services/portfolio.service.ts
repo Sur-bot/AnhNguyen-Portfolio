@@ -10,16 +10,15 @@ export class PortfolioService {
     return {
       name: 'Nguyễn Văn Anh',
       title: 'Frontend Developer',
-      description: 'Xin chào! Mình là Anh, một sinh viên năm cuối đam mê phát triển web. Mình yêu thích việc tạo ra những giao diện web đẹp mắt, mượt mà và thân thiện với người dùng. Với kiến thức về Angular, React và các công nghệ web hiện đại, mình luôn tìm tòi và học hỏi để nâng cao kỹ năng mỗi ngày.',
+      description: 'Xin chào! Mình là Anh, một sinh viên năm cuối đam mê phát triển web. Mình yêu thích việc tạo ra những giao diện web đẹp mắt, mượt mà và thân thiện với người dùng. Với kiến thức về Angular và các công nghệ web hiện đại, mình luôn tìm tòi và học hỏi để nâng cao kỹ năng mỗi ngày.',
       avatar: '',
       email: 'www.vanhsp2002@gmail.com',
-      phone: '+84 912 345 678',
+      phone: '+84 856 676 665',
       location: 'TP. Hồ Chí Minh, Việt Nam',
       socials: [
-        { name: 'GitHub', url: 'https://github.com/nguyenvanan', icon: 'fab fa-github' },
+        { name: 'GitHub', url: 'https://github.com/Sur-bot', icon: 'fab fa-github' },
         { name: 'LinkedIn', url: 'https://linkedin.com/in/nguyenvanan', icon: 'fab fa-linkedin' },
-        { name: 'Facebook', url: 'https://facebook.com/nguyenvanan', icon: 'fab fa-facebook' },
-        { name: 'Instagram', url: 'https://instagram.com/nguyenvanan', icon: 'fab fa-instagram' }
+        { name: 'Facebook', url: 'https://facebook.com/Survodich', icon: 'fab fa-facebook' }
       ]
     };
   }
