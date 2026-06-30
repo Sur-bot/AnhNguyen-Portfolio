@@ -12,8 +12,8 @@ export class AboutComponent implements OnInit {
   isVisible = false;
 
   stats = [
-    { value: 0, target: 6, labelKey: 'ABOUT.STATS.PROJECTS', suffix: '+' },
-    { value: 0, target: 1, labelKey: 'ABOUT.STATS.EXPERIENCE', suffix: '+' },
+    { value: 0, target: 6, labelKey: 'ABOUT.STATS.PROJECTS'},
+    { value: 0, target: 1, labelKey: 'ABOUT.STATS.EXPERIENCE', suffix: '<' },
     { value: 0, target: 14, labelKey: 'ABOUT.STATS.SKILLS', suffix: '' },
     { value: 0, target: 3, labelKey: 'ABOUT.STATS.CERTIFICATES', suffix: '' }
   ];

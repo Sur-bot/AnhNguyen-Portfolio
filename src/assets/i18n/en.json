@@ -26,9 +26,10 @@
     "TITLE": "About Me",
     "SUBTITLE": "Frontend Developer in Ho Chi Minh City",
     "DESCRIPTION": "Hello! I'm Anh, a final-year student passionate about web development. I love creating beautiful, smooth, and user-friendly web interfaces. With knowledge in Angular and modern web technologies, I'm always eager to learn and improve my skills every day.",
-    "BADGE_NUMBER": "1+",
+    "LOCATION": "Ho Chi Minh City, Vietnam",
+    "BADGE_NUMBER": "<1",
     "BADGE_TEXT": "Years\nExperience",
-    "UNIVERSITY": "HCMUT (Bach Khoa University)",
+    "UNIVERSITY": "Hoa Sen University",
     "AVAILABLE": "Open to work",
     "STATS": {
       "PROJECTS": "Projects",

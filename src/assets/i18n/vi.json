@@ -26,9 +26,10 @@
     "TITLE": "Về bản thân",
     "SUBTITLE": "Frontend Developer tại TP.HCM",
     "DESCRIPTION": "Xin chào! Mình là Anh, một sinh viên năm cuối đam mê phát triển web. Mình yêu thích việc tạo ra những giao diện web đẹp mắt, mượt mà và thân thiện với người dùng. Với kiến thức về Angular và các công nghệ web hiện đại, mình luôn tìm tòi và học hỏi để nâng cao kỹ năng mỗi ngày.",
-    "BADGE_NUMBER": "1+",
+    "LOCATION": "Tp.HCM, Việt Nam",
+    "BADGE_NUMBER": "<1",
     "BADGE_TEXT": "Năm\nKinh nghiệm",
-    "UNIVERSITY": "ĐH Bách Khoa TP.HCM",
+    "UNIVERSITY": "Đại Học Hoa Sen",
     "AVAILABLE": "Sẵn sàng nhận việc",
     "STATS": {
       "PROJECTS": "Dự án",

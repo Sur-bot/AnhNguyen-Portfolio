@@ -27,7 +27,7 @@
         <div class="about-details">
           <div class="detail-item">
             <i class="fas fa-map-marker-alt"></i>
-            <span>{{ info.location }}</span>
+            <span>{{ 'ABOUT.LOCATION' | translate }}</span>
           </div>
           <div class="detail-item">
             <i class="fas fa-envelope"></i>
@@ -45,7 +45,7 @@
 
         <div class="about-stats">
           <div class="stat-item" *ngFor="let stat of stats">
-            <span class="stat-value">{{ stat.value }}{{ stat.suffix }}</span>
+            <span class="stat-value">{{ stat.suffix }}{{ stat.value }}</span>
             <span class="stat-label">{{ stat.labelKey | translate }}</span>
           </div>
         </div>
